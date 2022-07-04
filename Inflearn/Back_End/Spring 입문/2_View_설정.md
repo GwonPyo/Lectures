@@ -23,6 +23,9 @@ index.html에 다음과 같은 내용을 입력해보자.
 
 이후 localhost를 다시 실행해보면 다음과 같은 화면이 뜬다.
 
+![image](https://user-images.githubusercontent.com/85156021/177084226-cf9253f2-7c38-4beb-bb6a-ac2550258bd0.png)
+
+
 <h2> <strong> 2. thymeleaf 템플릿 엔진 </strong> </h3>
 
 위에서 한 작업은 단지 우리가 작성한 파일을 웹 서버가 웹 브라우저로 넘겨준다. <br>
@@ -52,9 +55,9 @@ public class HelloController {
 
 * @Controller: sping은 controller파일에 @Controller라고 표시를 해줘야 한다.
 * @GetMapping("hello"): localhost8080:hello 요청이 들어오면 아래 함수를 호출한다.
-* return "Hello": 이후 ViewResolver가 Hello.html(hello.html)을 찾아 화면을 처리한다.
+* return "hello": 이후 ViewResolver가 hello.html을 찾아 화면을 처리한다.
 
-두 번째로 <b> 'src/main/resources/templates' </b> 폴더 안에 Hello.html 파일을 만들어주자. <br>
+두 번째로 <b> 'src/main/resources/templates' </b> 폴더 안에 hello.html 파일을 만들어주자. <br>
 그리고 해당 파일안에 다음과 같은 코드를 작성하자.
 
 ```(html)
@@ -75,9 +78,10 @@ public class HelloController {
 
 이후 localhost8080:hello에 접속해보면 다음과 같은 화면을 볼 수 있다.
 
+![image](https://user-images.githubusercontent.com/85156021/177084328-1ee90476-8692-4066-8505-3afadb98b379.png)
 
 
-위 과정들을 정리하면 다음과 같은 방식으로 진행된다.
+위 과정들은 다음과 같은 방식으로 진행된다.
 
 1. 웹 브라우저에서 localost:8080:hello를 요청한다.
 2. Spring boot에 내장된 톰켓 서버에서 해당 요청을 받고 Spring에 요청을 전달한다.
