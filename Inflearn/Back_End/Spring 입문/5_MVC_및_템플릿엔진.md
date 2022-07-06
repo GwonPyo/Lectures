@@ -2,7 +2,7 @@
 
 MVC란 Model, View, Controller를 통칭하는 말이다.
 
-* Model: 데이터를 담고 있는 데이터 베이스 역할을 한다.
+* Model: 데이터를 담고 있는 데이터베이스 역할을 한다.
 * View: 화면과 관련된 일을 처리한다. 
 * Controller: 비지니스 로직 등 서버와 관련된 일들을 처리한다. 
 
@@ -58,10 +58,12 @@ public class HelloController {
 ```
 
 이후 URL에 localhost:8080/hello_mvc를 입력하면 에러 화면이 발생한다. <br>
-hello_mvc 컨트롤러가 매개변수 name을 받아야 하므로 url에 해당 값을 전달해 줘야 에러가 발생하지 않는다. <br>
-만약 꼭 받아야 할 필요가 없다면 @RequestParam("name", required=false)라고 선언해주면 된다. <br>
+hello_mvc 컨트롤러가 <b>매개변수 name</b>을 받아야 하므로 url에 해당 값을 전달해 줘야 에러가 발생하지 않는다. <br>
+만약 꼭 받아야 할 필요가 없다면 @RequestParam("name", <b>required=false</b>)라고 선언해주면 된다. <br>
 그렇지 않다면 다음과 같이 입력해야 올바른 화면이 출력된다. <br>
 
-* localhost:8080/hello_mvc?name=MVC
+* <b>localhost:8080/hello_mvc?name=MVC</b>
 
-처리 과정은 이전에 설명했던 것과 동일하다. (2_View_설정.md 참고)
+![image](https://user-images.githubusercontent.com/85156021/177573371-7d9ad9a1-2888-46f4-9b9c-c8da16b00d0c.png)
+
+처리과정은 이전에 설명했던 것과 동일하다. (2_View_설정.md 참고)
